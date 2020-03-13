@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="112" id="KGk-i7-Jjw" customClass="TRLabelTextFieldImageTableViewCell" customModule="TrenteCoreSwift" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="112"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="111.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="x0B-QJ-W92">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="111"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Orq-FC-PKg">
+                                <rect key="frame" x="16" y="16" width="288" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ac_icon_mail" translatesAutoresizingMaskIntoConstraints="NO" id="LTV-1i-im0">
+                                <rect key="frame" x="279" y="43" width="25" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="LTV-1i-im0" secondAttribute="height" multiplier="1:1" id="x3m-OL-5b6"/>
+                                </constraints>
+                            </imageView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="hw1-RM-WEa">
+                                <rect key="frame" x="16" y="47" width="247" height="48"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="hw1-RM-WEa" firstAttribute="top" secondItem="Orq-FC-PKg" secondAttribute="bottom" constant="10" id="DeU-cK-ixN"/>
+                            <constraint firstItem="hw1-RM-WEa" firstAttribute="leading" secondItem="Orq-FC-PKg" secondAttribute="leading" id="DuA-jy-zF6"/>
+                            <constraint firstItem="Orq-FC-PKg" firstAttribute="leading" secondItem="x0B-QJ-W92" secondAttribute="leading" constant="16" id="Gcd-jf-nAo"/>
+                            <constraint firstAttribute="trailing" secondItem="LTV-1i-im0" secondAttribute="trailing" constant="16" id="Tzh-1c-JSo"/>
+                            <constraint firstItem="LTV-1i-im0" firstAttribute="leading" secondItem="hw1-RM-WEa" secondAttribute="trailing" constant="16" id="ZwN-YG-NvN"/>
+                            <constraint firstAttribute="bottom" secondItem="hw1-RM-WEa" secondAttribute="bottom" constant="16" id="doX-mI-6ax"/>
+                            <constraint firstAttribute="trailing" secondItem="Orq-FC-PKg" secondAttribute="trailing" constant="16" id="mVy-F1-SbL"/>
+                            <constraint firstItem="Orq-FC-PKg" firstAttribute="top" secondItem="x0B-QJ-W92" secondAttribute="top" constant="16" id="odI-94-KhA"/>
+                            <constraint firstItem="LTV-1i-im0" firstAttribute="centerY" secondItem="x0B-QJ-W92" secondAttribute="centerY" id="tSk-dU-aH8"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x0B-QJ-W92" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="C6L-Ya-Y7p"/>
+                    <constraint firstAttribute="bottom" secondItem="x0B-QJ-W92" secondAttribute="bottom" id="OcA-Oj-j3K"/>
+                    <constraint firstItem="x0B-QJ-W92" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="jnx-zV-EeV"/>
+                    <constraint firstAttribute="trailing" secondItem="x0B-QJ-W92" secondAttribute="trailing" id="lyb-7H-v9Q"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="contentTextField" destination="hw1-RM-WEa" id="mm3-5n-PlT"/>
+                <outlet property="label" destination="Orq-FC-PKg" id="Gm3-Fq-Yb9"/>
+                <outlet property="rightImageView" destination="LTV-1i-im0" id="fzh-VR-tgX"/>
+            </connections>
+            <point key="canvasLocation" x="68" y="32"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ac_icon_mail" width="25" height="25"/>
+    </resources>
+</document>

@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="ipad9_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LWCarryInTypeView" customModule="LiftWork" customModuleProvider="target">
+            <connections>
+                <outlet property="CarryInAChoice" destination="xUo-8c-dnK" id="bih-64-w4b"/>
+                <outlet property="CarryInALable" destination="Zyy-7c-n3z" id="BqZ-xI-ld2"/>
+                <outlet property="CarryInBChoice" destination="vfI-Er-azI" id="o4s-Gv-HSF"/>
+                <outlet property="CarryInBLable" destination="eVJ-c1-yzq" id="NoM-wt-cf6"/>
+                <outlet property="CarryInNomalChoice" destination="EQ3-ZG-28c" id="aea-O2-sMd"/>
+                <outlet property="CarryInNomalLable" destination="dPJ-Ic-A6C" id="yAE-RP-Mvr"/>
+                <outlet property="CarryInSwapChoice" destination="5Zy-Hb-Fkz" id="P1t-l5-iT6"/>
+                <outlet property="CarryInSwapLable" destination="edH-Rw-rbi" id="wsc-GA-A0U"/>
+                <outlet property="ContentView" destination="Bfr-wa-whD" id="27F-qW-7KL"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="Bfr-wa-whD" userLabel="Content View">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ITl-0i-SlU" userLabel="ViewLeft">
+                    <rect key="frame" x="0.0" y="20" width="187" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="MeR-oF-iEw" userLabel="Carry In Nomal">
+                            <rect key="frame" x="0.0" y="0.0" width="93.5" height="44"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EQ3-ZG-28c" userLabel="Carry In Nomal Choice">
+                                    <rect key="frame" x="5" y="5" width="25.5" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="EQ3-ZG-28c" secondAttribute="height" multiplier="15:20" id="JCz-UR-cCb"/>
+                                    </constraints>
+                                    <state key="normal" image="ic_radio_on"/>
+                                    <connections>
+                                        <action selector="tapChoice:" destination="-1" eventType="touchUpInside" id="ggi-EA-Alo"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="通常" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPJ-Ic-A6C" userLabel="Carry In Nomal Label" customClass="LWBlackNormalRegularLabel" customModule="LiftWork" customModuleProvider="target">
+                                    <rect key="frame" x="30.5" y="5" width="61" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="trailing" secondItem="dPJ-Ic-A6C" secondAttribute="trailing" constant="2" id="6a5-zF-FQz"/>
+                                <constraint firstItem="EQ3-ZG-28c" firstAttribute="leading" secondItem="MeR-oF-iEw" secondAttribute="leading" constant="5" id="Icd-N4-4LQ"/>
+                                <constraint firstAttribute="bottom" secondItem="dPJ-Ic-A6C" secondAttribute="bottom" constant="5" id="JKc-U7-LtV"/>
+                                <constraint firstItem="EQ3-ZG-28c" firstAttribute="top" secondItem="MeR-oF-iEw" secondAttribute="top" constant="5" id="UVf-gV-bfN"/>
+                                <constraint firstAttribute="bottom" secondItem="EQ3-ZG-28c" secondAttribute="bottom" constant="5" id="cx7-we-FMH"/>
+                                <constraint firstItem="dPJ-Ic-A6C" firstAttribute="top" secondItem="MeR-oF-iEw" secondAttribute="top" constant="5" id="pse-oW-6yi"/>
+                                <constraint firstItem="dPJ-Ic-A6C" firstAttribute="leading" secondItem="EQ3-ZG-28c" secondAttribute="trailing" id="rLz-QZ-AeR"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="8Jl-d6-gB2" userLabel="Carry In Swap">
+                            <rect key="frame" x="93.5" y="0.0" width="93.5" height="44"/>
+                            <subviews>
+                                <button opaque="NO" tag="1" contentMode="scaleToFill" horizontalCompressionResistancePriority="751" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Zy-Hb-Fkz" userLabel="Carry In Swap Choie">
+                                    <rect key="frame" x="5" y="5" width="34" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="5Zy-Hb-Fkz" secondAttribute="height" multiplier="1:1" id="Pnv-aI-JPT"/>
+                                    </constraints>
+                                    <state key="normal" image="ic_radio_off"/>
+                                    <connections>
+                                        <action selector="tapChoice:" destination="-1" eventType="touchUpInside" id="BRr-lQ-f1J"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="盛替" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="edH-Rw-rbi" userLabel="Carry In Swap Lable" customClass="LWBlackNormalRegularLabel" customModule="LiftWork" customModuleProvider="target">
+                                    <rect key="frame" x="39" y="5" width="49.5" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="edH-Rw-rbi" secondAttribute="bottom" constant="5" id="3io-ff-wWg"/>
+                                <constraint firstItem="5Zy-Hb-Fkz" firstAttribute="leading" secondItem="8Jl-d6-gB2" secondAttribute="leading" constant="5" id="3og-E7-UlP"/>
+                                <constraint firstItem="5Zy-Hb-Fkz" firstAttribute="top" secondItem="8Jl-d6-gB2" secondAttribute="top" constant="5" id="91x-x7-48B"/>
+                                <constraint firstItem="edH-Rw-rbi" firstAttribute="leading" secondItem="5Zy-Hb-Fkz" secondAttribute="trailing" id="cPs-8H-8Pp"/>
+                                <constraint firstAttribute="bottom" secondItem="5Zy-Hb-Fkz" secondAttribute="bottom" constant="5" id="gb8-Gr-JJ4"/>
+                                <constraint firstItem="edH-Rw-rbi" firstAttribute="top" secondItem="8Jl-d6-gB2" secondAttribute="top" constant="5" id="icP-eL-yBo"/>
+                                <constraint firstAttribute="trailing" secondItem="edH-Rw-rbi" secondAttribute="trailing" constant="5" id="tmv-hg-5Oj"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstItem="8Jl-d6-gB2" firstAttribute="top" secondItem="ITl-0i-SlU" secondAttribute="top" id="00M-9J-Quw"/>
+                        <constraint firstAttribute="bottom" secondItem="8Jl-d6-gB2" secondAttribute="bottom" id="6Dk-Qy-K6J"/>
+                        <constraint firstItem="MeR-oF-iEw" firstAttribute="leading" secondItem="ITl-0i-SlU" secondAttribute="leading" id="81O-JN-MMQ"/>
+                        <constraint firstAttribute="trailing" secondItem="8Jl-d6-gB2" secondAttribute="trailing" id="B18-mC-27q"/>
+                        <constraint firstItem="MeR-oF-iEw" firstAttribute="top" secondItem="ITl-0i-SlU" secondAttribute="top" id="RCl-ut-JHl"/>
+                        <constraint firstAttribute="bottom" secondItem="MeR-oF-iEw" secondAttribute="bottom" id="lRz-Rl-KNj"/>
+                        <constraint firstItem="MeR-oF-iEw" firstAttribute="width" secondItem="8Jl-d6-gB2" secondAttribute="width" id="qB0-du-kaX"/>
+                        <constraint firstItem="8Jl-d6-gB2" firstAttribute="leading" secondItem="MeR-oF-iEw" secondAttribute="trailing" id="zSL-QK-9Ez"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IfL-iq-HaO" userLabel="ViewRight">
+                    <rect key="frame" x="188" y="20" width="187" height="44"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="83M-TU-jBO" userLabel="Carry In Type A">
+                            <rect key="frame" x="0.0" y="0.0" width="93" height="44"/>
+                            <subviews>
+                                <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xUo-8c-dnK" userLabel="Carry In Type A Choice">
+                                    <rect key="frame" x="5" y="5" width="34" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="xUo-8c-dnK" secondAttribute="height" multiplier="1:1" id="gwR-gW-PPO"/>
+                                    </constraints>
+                                    <state key="normal" image="ic_radio_off"/>
+                                    <connections>
+                                        <action selector="tapChoice:" destination="-1" eventType="touchUpInside" id="JDt-Wj-thj"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搬入A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zyy-7c-n3z" userLabel="Carry In Type A Lable" customClass="LWBlackNormalRegularLabel" customModule="LiftWork" customModuleProvider="target">
+                                    <rect key="frame" x="39" y="5" width="49" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="Zyy-7c-n3z" firstAttribute="leading" secondItem="xUo-8c-dnK" secondAttribute="trailing" id="2tf-Pj-lEi"/>
+                                <constraint firstAttribute="trailing" secondItem="Zyy-7c-n3z" secondAttribute="trailing" constant="5" id="JMH-47-7wF"/>
+                                <constraint firstItem="Zyy-7c-n3z" firstAttribute="top" secondItem="83M-TU-jBO" secondAttribute="top" constant="5" id="eM8-Mf-MXo"/>
+                                <constraint firstAttribute="bottom" secondItem="Zyy-7c-n3z" secondAttribute="bottom" constant="5" id="gyc-8m-TBY"/>
+                                <constraint firstItem="xUo-8c-dnK" firstAttribute="leading" secondItem="83M-TU-jBO" secondAttribute="leading" constant="5" id="iL1-BW-8AQ"/>
+                                <constraint firstAttribute="bottom" secondItem="xUo-8c-dnK" secondAttribute="bottom" constant="5" id="iU1-cr-o8M"/>
+                                <constraint firstItem="xUo-8c-dnK" firstAttribute="top" secondItem="83M-TU-jBO" secondAttribute="top" constant="5" id="qN9-iK-SAs"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mEp-lH-nWg" userLabel="Carry In Type B">
+                            <rect key="frame" x="94" y="0.0" width="93" height="44"/>
+                            <subviews>
+                                <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vfI-Er-azI" userLabel="Carry In Type B Choice">
+                                    <rect key="frame" x="5" y="5" width="34" height="34"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" secondItem="vfI-Er-azI" secondAttribute="height" multiplier="1:1" id="iqH-QV-qjo"/>
+                                    </constraints>
+                                    <state key="normal" image="ic_radio_off"/>
+                                    <connections>
+                                        <action selector="tapChoice:" destination="-1" eventType="touchUpInside" id="Dn2-iM-Q4t"/>
+                                    </connections>
+                                </button>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="搬入B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eVJ-c1-yzq" userLabel="Carry In Type B Lable" customClass="LWBlackNormalRegularLabel" customModule="LiftWork" customModuleProvider="target">
+                                    <rect key="frame" x="39" y="5" width="49" height="34"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                    <nil key="textColor"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstItem="eVJ-c1-yzq" firstAttribute="leading" secondItem="vfI-Er-azI" secondAttribute="trailing" id="7sm-yF-hQ7"/>
+                                <constraint firstItem="eVJ-c1-yzq" firstAttribute="top" secondItem="mEp-lH-nWg" secondAttribute="top" constant="5" id="Etg-79-0yC"/>
+                                <constraint firstAttribute="bottom" secondItem="eVJ-c1-yzq" secondAttribute="bottom" constant="5" id="GMn-YV-Zwn"/>
+                                <constraint firstItem="vfI-Er-azI" firstAttribute="leading" secondItem="mEp-lH-nWg" secondAttribute="leading" constant="5" id="OoA-So-yIy"/>
+                                <constraint firstItem="vfI-Er-azI" firstAttribute="top" secondItem="mEp-lH-nWg" secondAttribute="top" constant="5" id="QJV-z7-yZ3"/>
+                                <constraint firstAttribute="bottom" secondItem="vfI-Er-azI" secondAttribute="bottom" constant="5" id="naS-CT-BZC"/>
+                                <constraint firstAttribute="trailing" secondItem="eVJ-c1-yzq" secondAttribute="trailing" constant="5" id="s2M-FA-iby"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="83M-TU-jBO" firstAttribute="leading" secondItem="IfL-iq-HaO" secondAttribute="leading" id="EpS-0Z-gql"/>
+                        <constraint firstAttribute="bottom" secondItem="83M-TU-jBO" secondAttribute="bottom" id="Ewm-5h-n2f"/>
+                        <constraint firstItem="mEp-lH-nWg" firstAttribute="leading" secondItem="83M-TU-jBO" secondAttribute="trailing" constant="1" id="WhT-bZ-4a3"/>
+                        <constraint firstAttribute="bottom" secondItem="mEp-lH-nWg" secondAttribute="bottom" id="axY-k9-eO9"/>
+                        <constraint firstItem="mEp-lH-nWg" firstAttribute="top" secondItem="IfL-iq-HaO" secondAttribute="top" id="fPc-il-U2I"/>
+                        <constraint firstItem="83M-TU-jBO" firstAttribute="top" secondItem="IfL-iq-HaO" secondAttribute="top" id="mSI-VQ-xII"/>
+                        <constraint firstAttribute="trailing" secondItem="mEp-lH-nWg" secondAttribute="trailing" id="oj1-hi-vzL"/>
+                        <constraint firstItem="83M-TU-jBO" firstAttribute="width" secondItem="mEp-lH-nWg" secondAttribute="width" id="pmh-VU-WLB"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="IfL-iq-HaO" firstAttribute="bottom" secondItem="kA2-Hl-Zto" secondAttribute="bottom" id="1jM-Hm-BxP"/>
+                <constraint firstItem="ITl-0i-SlU" firstAttribute="width" secondItem="IfL-iq-HaO" secondAttribute="width" id="9za-6B-W3h"/>
+                <constraint firstItem="IfL-iq-HaO" firstAttribute="top" secondItem="kA2-Hl-Zto" secondAttribute="top" id="C1N-KG-Jmq"/>
+                <constraint firstItem="ITl-0i-SlU" firstAttribute="leading" secondItem="kA2-Hl-Zto" secondAttribute="leading" id="ITF-V4-zC1"/>
+                <constraint firstItem="IfL-iq-HaO" firstAttribute="leading" secondItem="ITl-0i-SlU" secondAttribute="trailing" constant="1" id="abb-Hv-MVD"/>
+                <constraint firstItem="ITl-0i-SlU" firstAttribute="top" secondItem="kA2-Hl-Zto" secondAttribute="top" id="bYb-IV-8FD"/>
+                <constraint firstItem="ITl-0i-SlU" firstAttribute="bottom" secondItem="kA2-Hl-Zto" secondAttribute="bottom" id="nty-fl-293"/>
+                <constraint firstItem="kA2-Hl-Zto" firstAttribute="trailing" secondItem="IfL-iq-HaO" secondAttribute="trailing" id="zOa-z7-m8u"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="kA2-Hl-Zto"/>
+            <point key="canvasLocation" x="168.359375" y="-997.26562499999989"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_radio_off" width="38.400001525878906" height="38.400001525878906"/>
+        <image name="ic_radio_on" width="38.400001525878906" height="38.400001525878906"/>
+    </resources>
+</document>

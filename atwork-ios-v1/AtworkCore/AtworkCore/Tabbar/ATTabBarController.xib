@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATTabBarController" customModule="AtworkCore" customModuleProvider="target">
+            <connections>
+                <outlet property="customTabbar" destination="ONt-yS-dcK" id="lv5-ja-xI8"/>
+                <outlet property="tabBasic" destination="dze-AY-hq1" id="ELl-0q-Zlg"/>
+                <outlet property="tabDaily" destination="dhT-0I-95x" id="4rZ-X4-JBA"/>
+                <outlet property="tabMonthly" destination="U4J-9e-zBa" id="yIF-N8-al2"/>
+                <outlet property="tabSetting" destination="JQo-jF-kfE" id="nI2-cc-bUf"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ONt-yS-dcK">
+                    <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U4J-9e-zBa" customClass="ATTabBarButtonItem" customModule="AtworkCore">
+                            <rect key="frame" x="0.0" y="0.0" width="93" height="50"/>
+                            <state key="normal" title="Monthly"/>
+                            <connections>
+                                <action selector="changedTab:" destination="-1" eventType="touchUpInside" id="rhs-tN-FOB"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oiY-Kr-gOd">
+                            <rect key="frame" x="93" y="0.0" width="1" height="50"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="18h-tW-UM2"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dhT-0I-95x" customClass="ATTabBarButtonItem" customModule="AtworkCore">
+                            <rect key="frame" x="94" y="0.0" width="92.5" height="50"/>
+                            <state key="normal" title="Daily"/>
+                            <connections>
+                                <action selector="changedTab:" destination="-1" eventType="touchUpInside" id="81N-k8-asv"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="52n-Ow-HCV">
+                            <rect key="frame" x="186.5" y="0.0" width="1" height="50"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="B1Y-Pk-PLq"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dze-AY-hq1" customClass="ATTabBarButtonItem" customModule="AtworkCore">
+                            <rect key="frame" x="187.5" y="0.0" width="93" height="50"/>
+                            <state key="normal" title="Basic"/>
+                            <connections>
+                                <action selector="changedTab:" destination="-1" eventType="touchUpInside" id="n9R-AJ-K62"/>
+                            </connections>
+                        </button>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cic-zm-uvr">
+                            <rect key="frame" x="280.5" y="0.0" width="1" height="50"/>
+                            <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="1" id="jgk-bm-Yg4"/>
+                            </constraints>
+                        </view>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQo-jF-kfE" customClass="ATTabBarButtonItem" customModule="AtworkCore">
+                            <rect key="frame" x="281.5" y="0.0" width="92.5" height="50"/>
+                            <state key="normal" title="Setting"/>
+                            <connections>
+                                <action selector="changedTab:" destination="-1" eventType="touchUpInside" id="NBR-mt-kp9"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="dhT-0I-95x" firstAttribute="top" secondItem="U4J-9e-zBa" secondAttribute="top" id="0Kn-IW-mtd"/>
+                        <constraint firstItem="U4J-9e-zBa" firstAttribute="width" secondItem="ONt-yS-dcK" secondAttribute="width" multiplier="1/4" constant="-1" id="6vp-K8-wc8"/>
+                        <constraint firstItem="dze-AY-hq1" firstAttribute="height" secondItem="U4J-9e-zBa" secondAttribute="height" id="7z6-lu-iqQ"/>
+                        <constraint firstItem="U4J-9e-zBa" firstAttribute="height" secondItem="ONt-yS-dcK" secondAttribute="height" id="9JM-ze-loP"/>
+                        <constraint firstItem="cic-zm-uvr" firstAttribute="leading" secondItem="dze-AY-hq1" secondAttribute="trailing" id="9vb-NX-GCX"/>
+                        <constraint firstItem="dhT-0I-95x" firstAttribute="height" secondItem="U4J-9e-zBa" secondAttribute="height" id="AoB-PL-XMk"/>
+                        <constraint firstItem="cic-zm-uvr" firstAttribute="height" secondItem="oiY-Kr-gOd" secondAttribute="height" id="Bag-qO-0Rl"/>
+                        <constraint firstItem="oiY-Kr-gOd" firstAttribute="leading" secondItem="U4J-9e-zBa" secondAttribute="trailing" id="CIj-9u-mF2"/>
+                        <constraint firstItem="52n-Ow-HCV" firstAttribute="top" secondItem="oiY-Kr-gOd" secondAttribute="top" id="DF3-ha-jdj"/>
+                        <constraint firstItem="52n-Ow-HCV" firstAttribute="leading" secondItem="dhT-0I-95x" secondAttribute="trailing" id="DZz-qq-Gin"/>
+                        <constraint firstItem="oiY-Kr-gOd" firstAttribute="height" secondItem="U4J-9e-zBa" secondAttribute="height" id="DfU-sp-dF1"/>
+                        <constraint firstItem="52n-Ow-HCV" firstAttribute="height" secondItem="oiY-Kr-gOd" secondAttribute="height" id="Jah-RR-GSJ"/>
+                        <constraint firstItem="oiY-Kr-gOd" firstAttribute="top" secondItem="ONt-yS-dcK" secondAttribute="top" id="Kig-3O-vR3"/>
+                        <constraint firstAttribute="height" constant="50" id="Lwt-fa-Zvp"/>
+                        <constraint firstItem="cic-zm-uvr" firstAttribute="top" secondItem="oiY-Kr-gOd" secondAttribute="top" id="M2N-0D-GIj"/>
+                        <constraint firstItem="dze-AY-hq1" firstAttribute="leading" secondItem="52n-Ow-HCV" secondAttribute="trailing" id="Oe4-4l-qb1"/>
+                        <constraint firstItem="U4J-9e-zBa" firstAttribute="leading" secondItem="DkH-cS-WFh" secondAttribute="leading" id="PDf-zs-Qmy"/>
+                        <constraint firstItem="JQo-jF-kfE" firstAttribute="width" secondItem="U4J-9e-zBa" secondAttribute="width" id="TAE-yH-5Km"/>
+                        <constraint firstItem="cic-zm-uvr" firstAttribute="width" secondItem="oiY-Kr-gOd" secondAttribute="width" id="VHJ-J4-Xk2"/>
+                        <constraint firstItem="dhT-0I-95x" firstAttribute="width" secondItem="U4J-9e-zBa" secondAttribute="width" id="bFu-9d-6mL"/>
+                        <constraint firstItem="JQo-jF-kfE" firstAttribute="height" secondItem="U4J-9e-zBa" secondAttribute="height" id="dvg-Bu-pLJ"/>
+                        <constraint firstItem="dze-AY-hq1" firstAttribute="width" secondItem="U4J-9e-zBa" secondAttribute="width" id="gZ2-9l-gEs"/>
+                        <constraint firstItem="dhT-0I-95x" firstAttribute="leading" secondItem="oiY-Kr-gOd" secondAttribute="trailing" id="naN-Sj-1Kd"/>
+                        <constraint firstItem="U4J-9e-zBa" firstAttribute="top" secondItem="DkH-cS-WFh" secondAttribute="top" id="pCH-Ss-gN6"/>
+                        <constraint firstItem="JQo-jF-kfE" firstAttribute="leading" secondItem="cic-zm-uvr" secondAttribute="trailing" id="pe1-03-duc"/>
+                        <constraint firstItem="JQo-jF-kfE" firstAttribute="top" secondItem="U4J-9e-zBa" secondAttribute="top" id="qfb-PL-S9y"/>
+                        <constraint firstItem="52n-Ow-HCV" firstAttribute="width" secondItem="oiY-Kr-gOd" secondAttribute="width" id="rIp-eV-ke5"/>
+                        <constraint firstItem="dze-AY-hq1" firstAttribute="top" secondItem="U4J-9e-zBa" secondAttribute="top" id="yTv-mw-G5G"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="DkH-cS-WFh"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="ONt-yS-dcK" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="0zh-6c-hHf"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ONt-yS-dcK" secondAttribute="bottom" id="EHv-oW-9pX"/>
+                <constraint firstItem="ONt-yS-dcK" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="qqO-1d-9oq"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="85.599999999999994" y="-758.32083958020996"/>
+        </view>
+    </objects>
+</document>

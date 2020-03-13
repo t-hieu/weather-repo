@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="cy8-wp-uuE" customClass="LWSectionView" customModule="LiftWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="72C-QZ-Kar" customClass="LWnormalBoldLabel" customModule="LiftWork" customModuleProvider="target">
+                    <rect key="frame" x="10" y="21.5" width="355" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="3H2-fj-Ki7" firstAttribute="trailing" secondItem="72C-QZ-Kar" secondAttribute="trailing" constant="10" id="6MU-ys-AlA"/>
+                <constraint firstItem="72C-QZ-Kar" firstAttribute="centerY" secondItem="cy8-wp-uuE" secondAttribute="centerY" id="EgS-G7-c77"/>
+                <constraint firstItem="72C-QZ-Kar" firstAttribute="leading" secondItem="3H2-fj-Ki7" secondAttribute="leading" constant="10" id="Srx-k3-ZS8"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="3H2-fj-Ki7"/>
+            <connections>
+                <outlet property="titleLabel" destination="72C-QZ-Kar" id="ee1-Cn-Qyq"/>
+            </connections>
+            <point key="canvasLocation" x="1" y="-424"/>
+        </view>
+    </objects>
+</document>

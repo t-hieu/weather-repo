@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WFOCropImageView" customModule="AtworkCore" customModuleProvider="target">
+            <connections>
+                <outlet property="scrollView" destination="lHv-Wh-b33" id="8a5-QZ-xqZ"/>
+                <outlet property="view" destination="iN0-l3-epB" id="ZEq-RE-Xdr"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="403"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lHv-Wh-b33">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="403"/>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="lHv-Wh-b33" secondAttribute="trailing" id="0pw-HR-xmB"/>
+                <constraint firstAttribute="bottom" secondItem="lHv-Wh-b33" secondAttribute="bottom" id="13B-5Z-JCo"/>
+                <constraint firstItem="lHv-Wh-b33" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="9TI-pV-SqN"/>
+                <constraint firstItem="lHv-Wh-b33" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="BpN-h6-MXE"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="40.799999999999997" y="-72.413793103448285"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:LW_Pro/LW_Pro.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:AtworkCore/AtworkCore.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LiftWork/LiftWork.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:TrenteCoreSwift/TrenteCoreSwift.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:LW_Customer/LW_Customer.xcodeproj">
+   </FileRef>
+</Workspace>

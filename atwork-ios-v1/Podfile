@@ -1,0 +1,92 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '10.0'
+
+
+workspace 'AtWork-IOS.xcworkspace'
+
+
+target 'LiftWork' do
+     use_frameworks!
+    project 'LiftWork/LiftWork.xcodeproj'
+    
+    
+    
+end
+
+target 'LW_Customer' do
+    use_frameworks!
+    pod 'Firebase'
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Messaging'
+    project 'LW_Customer/LW_Customer.xcodeproj'
+    
+    
+    
+end
+
+target 'LW_Pro' do
+    use_frameworks!
+    project 'LW_Pro/LW_Pro.xcodeproj'
+    
+end
+
+target 'TrenteCoreSwift' do
+    use_frameworks!
+    pod 'Alamofire', '~> 4.5.1'
+    
+    pod 'AlamofireImage','3.3.0'
+    
+    pod 'SVProgressHUD'
+    
+    pod 'Toaster'
+    
+    pod 'ObjectMapper','~>3.3.0'
+    
+    pod 'SwiftMessages','4.1.2'
+    
+    pod 'IQKeyboardManagerSwift'
+
+    project 'TrenteCoreSwift/TrenteCoreSwift.xcodeproj'
+    
+end
+
+target 'AtworkCore' do
+    use_frameworks!
+    pod 'ObjectMapper','~>3.3.0'
+    pod 'Alamofire', '~> 4.5.1'
+    pod 'SwiftMessages','4.1.2'
+    pod 'AlamofireImage','3.3.0'
+    
+    pod 'SVProgressHUD'
+    pod 'Firebase'
+    pod 'Firebase/Core'
+    pod 'Firebase/Database'
+    pod 'Firebase/Auth'
+    pod 'Firebase/Messaging'
+    
+    pod 'Toaster'
+    pod 'FSCalendar'
+    
+    project 'AtworkCore/AtworkCore.xcodeproj'
+    
+end
+
+
+post_install do | installer |
+    
+    require 'redcarpet'
+    
+    acknowledgements = File.read('Pods/Target Support Files/Pods-LiftWork/Pods-LiftWork-acknowledgements.markdown', :encoding => Encoding::UTF_8)
+    
+    markdown = Redcarpet::Markdown.new(Redcarpet::Render::HTML)
+    
+    html = markdown.render(acknowledgements)
+    
+    File.write('LiftWork/lisence_info.html', html)
+    File.write('AtworkCore/lisence_info.html', html)
+    File.write('LW_Customer/lisence_info.html', html)
+    File.write('LW_Pro/lisence_info.html', html)
+end
+

@@ -1,0 +1,31 @@
+/* 
+  Localizable.strings
+  LW_Customer
+
+  Created by CuongNV on 11/15/18.
+  Copyright © 2018 Trente. All rights reserved.
+*/
+// push notifycation
+"AW001" = "現場名：%@ \n日付：%@ \n時間：%@";
+"AT001" = "予定が決定しました。";
+"FM_CL_002" = "%@ edited a schedule: %@";
+"FM_CL_003" = "Today’s schedule: %@ items \nToday’s ToDo: %@ items";
+"FM_CL_004" = "Tomorrow’s schedule: %@ items \nTomorrow’s ToDo: %@ items";
+"FM_CL_0031" = "Today’s schedule: %@ items";
+"FM_CL_0032" = "Today’s ToDo: %@ items";
+"FM_CL_0041" = "Tomorrow’s schedule: %@ items";
+"FM_CL_0042" = "Tomorrow’s ToDo: %@ items";
+"FM_CL_005"="Calendar Todo";
+"FM_CL_0051"="%@";
+"LW_CUSTOMER"="えれ助";
+////////////////
+"ACTION_CANCEL" = "キャンセル";
+"ACTION_DONE" = "完了";
+"confirm_change_schedule_mode_form_normal_to_event" = "行事申請に切り替えます、変更は失われますがよろしいですか？";
+"confirm_change_schedule_mode_form_event_to_normal" = "通常申請に切り替えます、変更は失われますがよろしいですか？";
+"confirm_logout" = "ログアウトしますか？";
+"confirm_delete_schedule" = "予定申請を削除します。元に戻す事はできませんがよろしいですか？";
+"Ok" = "OK";
+"Cancel" = "キャンセル";
+"ACTION_OK" = "OK";
+"lw_send_contact_us_success"=" 送信が完了しました。お問い合わせいただき、ありがとうございました。";

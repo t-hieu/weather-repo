@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATDailyController" customModule="AtworkCore" customModuleProvider="target">
+            <connections>
+                <outlet property="byELV" destination="mUl-wc-q15" id="87h-x9-a2V"/>
+                <outlet property="byList" destination="8YX-uR-Yko" id="aat-Zu-JrW"/>
+                <outlet property="dailyPartView" destination="AMQ-N8-lcf" id="8Ka-5c-EvF"/>
+                <outlet property="timeLabel" destination="Jua-aO-Yz9" id="zGg-ly-Ahd"/>
+                <outlet property="timeScrollView" destination="akT-I8-PAp" id="dTf-Fj-l81"/>
+                <outlet property="timeView" destination="poE-Rr-Y9r" id="klO-ET-ob9"/>
+                <outlet property="timeViewHeightConstraint" destination="swr-HV-Hq9" id="tlO-cV-GXN"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iGM-xx-CAh" userLabel="Divider View">
+                    <rect key="frame" x="0.0" y="70" width="375" height="0.5"/>
+                    <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="0.5" id="4ah-Rg-WX9"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7i-TI-HhR" userLabel="Top View">
+                    <rect key="frame" x="0.0" y="20" width="375" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vHx-Sm-D8b" userLabel="Back Button">
+                            <rect key="frame" x="10" y="5" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="YNq-vr-2uX"/>
+                            </constraints>
+                            <state key="normal" title="時間" image="ic_prev_day"/>
+                            <connections>
+                                <action selector="tapPreviousDay:" destination="-1" eventType="touchUpInside" id="Lpp-nR-KX0"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9N6-aU-dIo" userLabel="Today Button">
+                            <rect key="frame" x="60" y="12" width="40" height="26"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="qdG-cT-8P1"/>
+                            </constraints>
+                            <state key="normal" title="今日">
+                                <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="tapToDay:" destination="-1" eventType="touchUpInside" id="YhA-IA-c0a"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Kq-l3-8n2" userLabel="Next Button">
+                            <rect key="frame" x="110" y="5" width="40" height="40"/>
+                            <state key="normal" title="Next" image="ic_next_day"/>
+                            <connections>
+                                <action selector="tapNextDay:" destination="-1" eventType="touchUpInside" id="Zkw-ge-1XL"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8YX-uR-Yko" customClass="ATTabBarGrayButtonItem" customModule="AtworkCore" customModuleProvider="target">
+                            <rect key="frame" x="300" y="5" width="60" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="60" id="qRq-et-9jx"/>
+                            </constraints>
+                            <state key="normal" title="全体"/>
+                            <connections>
+                                <action selector="tapELV:" destination="-1" eventType="touchUpInside" id="xAQ-cU-Odm"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mUl-wc-q15" customClass="ATTabBarGrayButtonItem" customModule="AtworkCore" customModuleProvider="target">
+                            <rect key="frame" x="240" y="5" width="60" height="40"/>
+                            <state key="normal" title="個別"/>
+                            <connections>
+                                <action selector="tapELV:" destination="-1" eventType="touchUpInside" id="Ior-uB-bb0"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstItem="3Kq-l3-8n2" firstAttribute="leading" secondItem="9N6-aU-dIo" secondAttribute="trailing" constant="10" id="054-zd-qeu"/>
+                        <constraint firstItem="vHx-Sm-D8b" firstAttribute="leading" secondItem="d7i-TI-HhR" secondAttribute="leading" constant="10" id="0KD-VU-0yX"/>
+                        <constraint firstItem="3Kq-l3-8n2" firstAttribute="width" secondItem="vHx-Sm-D8b" secondAttribute="width" id="5Lh-cj-j06"/>
+                        <constraint firstAttribute="bottom" secondItem="8YX-uR-Yko" secondAttribute="bottom" constant="5" id="AAW-MT-veX"/>
+                        <constraint firstItem="9N6-aU-dIo" firstAttribute="top" secondItem="d7i-TI-HhR" secondAttribute="top" constant="12" id="Dvt-I6-u9g"/>
+                        <constraint firstAttribute="bottom" secondItem="9N6-aU-dIo" secondAttribute="bottom" constant="12" id="J5N-N4-wGi"/>
+                        <constraint firstItem="8YX-uR-Yko" firstAttribute="leading" secondItem="mUl-wc-q15" secondAttribute="trailing" id="KL9-XJ-cRI"/>
+                        <constraint firstItem="8YX-uR-Yko" firstAttribute="centerY" secondItem="d7i-TI-HhR" secondAttribute="centerY" id="Pob-Ro-pQe"/>
+                        <constraint firstAttribute="bottom" secondItem="vHx-Sm-D8b" secondAttribute="bottom" constant="5" id="PqK-mi-uRL"/>
+                        <constraint firstItem="vHx-Sm-D8b" firstAttribute="top" secondItem="d7i-TI-HhR" secondAttribute="top" constant="5" id="Q6V-KD-hJO"/>
+                        <constraint firstAttribute="bottom" secondItem="3Kq-l3-8n2" secondAttribute="bottom" constant="5" id="SNA-9w-k7E"/>
+                        <constraint firstItem="8YX-uR-Yko" firstAttribute="top" secondItem="d7i-TI-HhR" secondAttribute="top" constant="5" id="UK7-KO-eCn"/>
+                        <constraint firstAttribute="trailing" secondItem="8YX-uR-Yko" secondAttribute="trailing" constant="15" id="VTR-f7-e79"/>
+                        <constraint firstItem="3Kq-l3-8n2" firstAttribute="top" secondItem="d7i-TI-HhR" secondAttribute="top" constant="5" id="aJi-S4-p0o"/>
+                        <constraint firstItem="3Kq-l3-8n2" firstAttribute="height" secondItem="vHx-Sm-D8b" secondAttribute="height" id="doH-hT-c8w"/>
+                        <constraint firstItem="9N6-aU-dIo" firstAttribute="leading" secondItem="vHx-Sm-D8b" secondAttribute="trailing" constant="10" id="fUn-io-NP7"/>
+                        <constraint firstItem="mUl-wc-q15" firstAttribute="height" secondItem="8YX-uR-Yko" secondAttribute="height" id="g1z-wE-CIo"/>
+                        <constraint firstAttribute="height" constant="50" id="gKY-Hi-NEe"/>
+                        <constraint firstItem="mUl-wc-q15" firstAttribute="width" secondItem="8YX-uR-Yko" secondAttribute="width" id="gvK-o0-130"/>
+                        <constraint firstItem="mUl-wc-q15" firstAttribute="centerY" secondItem="d7i-TI-HhR" secondAttribute="centerY" id="ips-lc-U6p"/>
+                    </constraints>
+                </view>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akT-I8-PAp" userLabel="Time Scroll View">
+                    <rect key="frame" x="0.0" y="100.5" width="50" height="566.5"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="poE-Rr-Y9r" userLabel="Time View" customClass="LCTimeView" customModule="AtworkCore" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="50" height="200"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="200" id="swr-HV-Hq9"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="poE-Rr-Y9r" secondAttribute="bottom" id="5Rb-Y3-fyY"/>
+                        <constraint firstItem="poE-Rr-Y9r" firstAttribute="leading" secondItem="akT-I8-PAp" secondAttribute="leading" id="fCX-Up-grq"/>
+                        <constraint firstItem="poE-Rr-Y9r" firstAttribute="width" secondItem="akT-I8-PAp" secondAttribute="width" id="iBe-hN-3th"/>
+                        <constraint firstAttribute="width" constant="50" id="kKU-nd-5my"/>
+                        <constraint firstItem="poE-Rr-Y9r" firstAttribute="top" secondItem="akT-I8-PAp" secondAttribute="top" id="uAY-RF-7TY"/>
+                        <constraint firstAttribute="trailing" secondItem="poE-Rr-Y9r" secondAttribute="trailing" id="x8A-FM-rya"/>
+                    </constraints>
+                </scrollView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AMQ-N8-lcf">
+                    <rect key="frame" x="50" y="70.5" width="325" height="596.5"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="時間" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Jua-aO-Yz9" customClass="LWBlackNormalRegularLabel" customModule="AtworkCore" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="70.5" width="50" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="Lgs-qO-25R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="AMQ-N8-lcf" secondAttribute="trailing" id="8wm-9B-iuy"/>
+                <constraint firstItem="AMQ-N8-lcf" firstAttribute="leading" secondItem="akT-I8-PAp" secondAttribute="trailing" id="9C0-Ff-OVv"/>
+                <constraint firstItem="AMQ-N8-lcf" firstAttribute="top" secondItem="iGM-xx-CAh" secondAttribute="bottom" id="Bhk-dR-a2i"/>
+                <constraint firstItem="AMQ-N8-lcf" firstAttribute="leading" secondItem="Jua-aO-Yz9" secondAttribute="trailing" id="E6d-V2-Y6l"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="AMQ-N8-lcf" secondAttribute="bottom" id="FWO-V9-2kv"/>
+                <constraint firstItem="iGM-xx-CAh" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="GY7-3q-Mg0"/>
+                <constraint firstItem="iGM-xx-CAh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="IW2-iR-KeX"/>
+                <constraint firstItem="Jua-aO-Yz9" firstAttribute="top" secondItem="iGM-xx-CAh" secondAttribute="bottom" id="JQb-TM-7HA"/>
+                <constraint firstAttribute="bottom" secondItem="akT-I8-PAp" secondAttribute="bottom" id="Vgl-PI-E27"/>
+                <constraint firstItem="d7i-TI-HhR" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="ae4-I7-uby"/>
+                <constraint firstItem="d7i-TI-HhR" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="eHe-fZ-Ca1"/>
+                <constraint firstItem="akT-I8-PAp" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="gfM-ee-Eft"/>
+                <constraint firstItem="iGM-xx-CAh" firstAttribute="top" secondItem="d7i-TI-HhR" secondAttribute="bottom" id="kGK-a1-d18"/>
+                <constraint firstItem="d7i-TI-HhR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="kzA-e1-L7B"/>
+                <constraint firstItem="Jua-aO-Yz9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="xMO-PW-YMv"/>
+                <constraint firstItem="akT-I8-PAp" firstAttribute="top" secondItem="Jua-aO-Yz9" secondAttribute="bottom" id="zyS-xR-aQn"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="ic_next_day" width="55" height="43"/>
+        <image name="ic_prev_day" width="56" height="43"/>
+    </resources>
+</document>

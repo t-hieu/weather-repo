@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATInputCompanyCodeController" customModule="AtworkCore" customModuleProvider="target">
+            <connections>
+                <outlet property="btNext" destination="Vhc-Re-4YC" id="QER-VE-f30"/>
+                <outlet property="codeText" destination="ytT-TN-6uZ" id="iyc-hx-ny3"/>
+                <outlet property="view" destination="j78-ua-kEq" id="e3R-kZ-58x"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="j78-ua-kEq">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AVt-Ve-sVl">
+                    <rect key="frame" x="0.0" y="20" width="375" height="133.5"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WJ5-W2-H2r">
+                            <rect key="frame" x="15" y="30" width="345" height="41"/>
+                            <string key="text">あなたの所属会社に割り当てられている
+会社CODEを入力して下さい。</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="WJ5-W2-H2r" firstAttribute="leading" secondItem="AVt-Ve-sVl" secondAttribute="leading" constant="15" id="Qs6-K4-I1H"/>
+                        <constraint firstItem="WJ5-W2-H2r" firstAttribute="top" secondItem="AVt-Ve-sVl" secondAttribute="top" constant="30" id="bQ3-7V-91v"/>
+                        <constraint firstAttribute="trailing" secondItem="WJ5-W2-H2r" secondAttribute="trailing" constant="15" id="jcS-G3-M4u"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="会社CODE" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DTK-dk-YTK" customClass="LWBlueNormalBoldLabel" customModule="AtworkCore">
+                    <rect key="frame" x="50" y="173.5" width="81" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ytT-TN-6uZ" customClass="LWBlackNormalRegularTextField" customModule="AtworkCore">
+                    <rect key="frame" x="50" y="195.5" width="275" height="30"/>
+                    <nil key="textColor"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vhc-Re-4YC" customClass="LWRoundedLightBlueButton" customModule="LW_Customer" customModuleProvider="target">
+                    <rect key="frame" x="127.5" y="607" width="120" height="30"/>
+                    <color key="backgroundColor" red="0.15686274510000001" green="0.41960784309999999" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="120" id="Dx0-hm-dT8"/>
+                    </constraints>
+                    <state key="normal" title="次へ">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="tapNext:" destination="-1" eventType="touchUpInside" id="dhU-q1-0h8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="AVt-Ve-sVl" firstAttribute="leading" secondItem="3B2-H9-rCO" secondAttribute="leading" id="9Ad-Bo-JX6"/>
+                <constraint firstItem="AVt-Ve-sVl" firstAttribute="top" secondItem="3B2-H9-rCO" secondAttribute="top" id="AT3-mV-vIf"/>
+                <constraint firstItem="3B2-H9-rCO" firstAttribute="trailing" secondItem="ytT-TN-6uZ" secondAttribute="trailing" constant="50" id="AXv-jN-MzK"/>
+                <constraint firstItem="ytT-TN-6uZ" firstAttribute="top" secondItem="DTK-dk-YTK" secondAttribute="bottom" constant="1" id="D6u-mX-VQP"/>
+                <constraint firstItem="DTK-dk-YTK" firstAttribute="top" secondItem="AVt-Ve-sVl" secondAttribute="bottom" constant="20" id="Iok-Pj-GZw"/>
+                <constraint firstItem="ytT-TN-6uZ" firstAttribute="leading" secondItem="3B2-H9-rCO" secondAttribute="leading" constant="50" id="MvQ-nA-m9g"/>
+                <constraint firstItem="DTK-dk-YTK" firstAttribute="leading" secondItem="3B2-H9-rCO" secondAttribute="leading" constant="50" id="b88-Fd-XyF"/>
+                <constraint firstItem="3B2-H9-rCO" firstAttribute="bottom" secondItem="Vhc-Re-4YC" secondAttribute="bottom" constant="30" id="eEg-3a-q6t"/>
+                <constraint firstItem="AVt-Ve-sVl" firstAttribute="width" secondItem="j78-ua-kEq" secondAttribute="width" id="nNK-xA-k9t"/>
+                <constraint firstItem="Vhc-Re-4YC" firstAttribute="centerX" secondItem="3B2-H9-rCO" secondAttribute="centerX" id="ssm-58-mJf"/>
+                <constraint firstItem="AVt-Ve-sVl" firstAttribute="height" secondItem="j78-ua-kEq" secondAttribute="height" multiplier="1/5" id="svg-h9-hjQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="3B2-H9-rCO"/>
+        </view>
+    </objects>
+</document>

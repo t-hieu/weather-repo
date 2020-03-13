@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BreakTimeSettingViewController" customModule="AtworkCore" customModuleProvider="target">
+            <connections>
+                <outlet property="HeaderTitle" destination="BQ8-1L-oxQ" id="525-6e-rIV"/>
+                <outlet property="HeaderVIew" destination="LWo-D0-EIX" id="TPl-3I-f30"/>
+                <outlet property="IsBeakTimeEnable" destination="Dgt-Wv-anh" id="A12-iT-02g"/>
+                <outlet property="TableView" destination="aDn-oD-wXg" id="XQl-wA-let"/>
+                <outlet property="ViewForLB" destination="sk9-P9-UXk" id="lGg-ZP-KpW"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LWo-D0-EIX" userLabel="Header View">
+                    <rect key="frame" x="0.0" y="20" width="375" height="45"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="休憩時間予約申請制限" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9lL-w6-c7M" customClass="LWBlackNormalBoldLabel" customModule="AtworkCore" customModuleProvider="target">
+                            <rect key="frame" x="8" y="0.0" width="241" height="45"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Dgt-Wv-anh">
+                            <rect key="frame" x="296" y="7" width="51" height="31"/>
+                            <connections>
+                                <action selector="ValueChanged:" destination="-1" eventType="valueChanged" id="enA-J8-10f"/>
+                            </connections>
+                        </switch>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="i1c-WW-CMD" firstAttribute="trailing" secondItem="Dgt-Wv-anh" secondAttribute="trailing" constant="30" id="19n-pO-Jem"/>
+                        <constraint firstItem="9lL-w6-c7M" firstAttribute="leading" secondItem="i1c-WW-CMD" secondAttribute="leading" constant="8" id="8yj-jT-I7F"/>
+                        <constraint firstItem="Dgt-Wv-anh" firstAttribute="centerY" secondItem="LWo-D0-EIX" secondAttribute="centerY" id="FDa-LV-Zuc"/>
+                        <constraint firstItem="9lL-w6-c7M" firstAttribute="top" secondItem="i1c-WW-CMD" secondAttribute="top" id="Fx5-il-uFN"/>
+                        <constraint firstAttribute="height" constant="45" id="IDf-6c-WJt"/>
+                        <constraint firstItem="9lL-w6-c7M" firstAttribute="bottom" secondItem="i1c-WW-CMD" secondAttribute="bottom" id="a2J-vx-b8n"/>
+                        <constraint firstItem="Dgt-Wv-anh" firstAttribute="leading" secondItem="9lL-w6-c7M" secondAttribute="trailing" constant="47" id="l5H-cg-YlE"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="i1c-WW-CMD"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sk9-P9-UXk">
+                    <rect key="frame" x="0.0" y="65" width="375" height="65"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tSK-RU-TMA">
+                            <rect key="frame" x="8" y="0.0" width="367" height="65"/>
+                            <string key="text">休憩時間に対する申請可能要否を設定します。
+ONにすると休憩時間に設定している時間へ
+予約申請ができなくなります。</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="65" id="9QZ-Wh-X9U"/>
+                        <constraint firstItem="tSK-RU-TMA" firstAttribute="top" secondItem="sk9-P9-UXk" secondAttribute="top" id="IdR-iY-HG9"/>
+                        <constraint firstItem="A1U-0m-h9M" firstAttribute="trailing" secondItem="tSK-RU-TMA" secondAttribute="trailing" id="XTA-L3-UYK"/>
+                        <constraint firstItem="tSK-RU-TMA" firstAttribute="leading" secondItem="sk9-P9-UXk" secondAttribute="leading" constant="8" id="l0y-rm-HnE"/>
+                        <constraint firstItem="A1U-0m-h9M" firstAttribute="bottom" secondItem="tSK-RU-TMA" secondAttribute="bottom" id="sLC-n1-0UU"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="A1U-0m-h9M"/>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BQ8-1L-oxQ">
+                    <rect key="frame" x="0.0" y="130" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="休憩時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JmF-p5-qev">
+                            <rect key="frame" x="8" y="0.0" width="367" height="50"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="goA-6t-15m"/>
+                        <constraint firstItem="JmF-p5-qev" firstAttribute="leading" secondItem="BQ8-1L-oxQ" secondAttribute="leading" constant="8" id="hUo-bt-hbB"/>
+                        <constraint firstItem="JmF-p5-qev" firstAttribute="top" secondItem="BQ8-1L-oxQ" secondAttribute="top" id="o7j-Wh-ign"/>
+                        <constraint firstAttribute="trailing" secondItem="JmF-p5-qev" secondAttribute="trailing" id="wL2-aa-6nb"/>
+                        <constraint firstAttribute="bottom" secondItem="JmF-p5-qev" secondAttribute="bottom" id="z1S-fy-zG5"/>
+                    </constraints>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="aDn-oD-wXg">
+                    <rect key="frame" x="0.0" y="180" width="375" height="427"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d9O-dW-76S" customClass="LWRoundedDarkOrangeButton" customModule="AtworkCore" customModuleProvider="target">
+                    <rect key="frame" x="300" y="617" width="60" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="60" id="lIK-Nl-4Wa"/>
+                        <constraint firstAttribute="height" constant="35" id="vUQ-p4-w9q"/>
+                    </constraints>
+                    <state key="normal" title="更新"/>
+                    <connections>
+                        <action selector="updateChoice:" destination="-1" eventType="touchUpInside" id="9NT-2q-xh2"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="sk9-P9-UXk" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="0et-vi-TU9"/>
+                <constraint firstItem="d9O-dW-76S" firstAttribute="top" secondItem="aDn-oD-wXg" secondAttribute="bottom" constant="10" id="5xr-HJ-i4o"/>
+                <constraint firstItem="BQ8-1L-oxQ" firstAttribute="top" secondItem="sk9-P9-UXk" secondAttribute="bottom" id="CkR-dw-PcS"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="d9O-dW-76S" secondAttribute="trailing" constant="15" id="HWO-4d-VYL"/>
+                <constraint firstItem="aDn-oD-wXg" firstAttribute="top" secondItem="BQ8-1L-oxQ" secondAttribute="bottom" id="MIq-Pv-hlc"/>
+                <constraint firstItem="aDn-oD-wXg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="MrK-bX-bzJ"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="aDn-oD-wXg" secondAttribute="trailing" id="NPV-KZ-vfG"/>
+                <constraint firstItem="sk9-P9-UXk" firstAttribute="top" secondItem="LWo-D0-EIX" secondAttribute="bottom" id="VO1-kH-LDC"/>
+                <constraint firstItem="LWo-D0-EIX" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="Wpp-90-kZv"/>
+                <constraint firstItem="sk9-P9-UXk" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="hei-1N-XUl"/>
+                <constraint firstAttribute="trailing" secondItem="LWo-D0-EIX" secondAttribute="trailing" id="lVz-12-DEA"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="d9O-dW-76S" secondAttribute="bottom" constant="15" id="lkZ-9H-ZTE"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BQ8-1L-oxQ" secondAttribute="trailing" id="nld-eq-cf9"/>
+                <constraint firstItem="BQ8-1L-oxQ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="qAc-5T-oP6"/>
+                <constraint firstItem="LWo-D0-EIX" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="sTy-Ic-Dar"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="100" y="48.125937031484263"/>
+        </view>
+    </objects>
+</document>

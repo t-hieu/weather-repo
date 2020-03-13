@@ -1,0 +1,21 @@
+/* 
+  Defaults.strings
+  LW_Pro
+
+  Created by CuongNV on 11/19/18.
+  Copyright © 2018 Atwork. All rights reserved.
+*/
+"Take_photo" = "take photo";
+"ACTION_CANCEL" = "キャンセル";
+"ACTION_DONE" = "完了";
+"confirm_change_schedule_mode_form_normal_to_event" = "行事申請に切り替えます、変更は失われますがよろしいですか？";
+"confirm_change_schedule_mode_form_event_to_normal" = "通常申請に切り替えます、変更は失われますがよろしいですか？";
+"confirm_logout" = "ログアウトしますか？";
+"confirm_delete_schedule" = "予定申請を削除します。元に戻す事はできませんがよろしいですか？";
+"Ok" = "OK";
+"Cancel" = "キャンセル";
+"ACTION_OK" = "OK";
+"Duplicate_Time"= "休憩時間が重複しています。";
+"BreakTime_Outside_OperationTime"="稼働時間外に休憩時間を設定することは出来ません。";
+"Update_Success" = "更新が完了しました。";
+"lw_send_contact_us_success"=" 送信が完了しました。お問い合わせいただき、ありがとうございました。";

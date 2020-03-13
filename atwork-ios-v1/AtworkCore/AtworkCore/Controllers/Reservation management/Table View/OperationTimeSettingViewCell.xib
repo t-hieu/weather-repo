@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="OperationTimeSettingViewCell" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="OperationTimeSettingViewCell" customModule="AtworkCore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CL8-Hw-GXm">
+                        <rect key="frame" x="0.0" y="0.0" width="110" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IBg-MX-712" userLabel="lbFrom" customClass="LWBlackNormalRegularLabel" customModule="AtworkCore" customModuleProvider="target">
+                                <rect key="frame" x="37" y="11.5" width="36" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fpl-eA-5Jy" userLabel="Bt Tap From">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="43.5"/>
+                                <connections>
+                                    <action selector="tapFrom:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="sTg-iW-bTm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="IBg-MX-712" firstAttribute="centerX" secondItem="CL8-Hw-GXm" secondAttribute="centerX" id="36O-QI-Pe9"/>
+                            <constraint firstAttribute="width" constant="110" id="Hby-Tj-3UN"/>
+                            <constraint firstItem="IBg-MX-712" firstAttribute="centerY" secondItem="CL8-Hw-GXm" secondAttribute="centerY" id="QL6-s9-L6l"/>
+                            <constraint firstItem="fpl-eA-5Jy" firstAttribute="top" secondItem="CL8-Hw-GXm" secondAttribute="top" id="czp-Vx-rwK"/>
+                            <constraint firstItem="fpl-eA-5Jy" firstAttribute="leading" secondItem="CL8-Hw-GXm" secondAttribute="leading" id="dvP-TR-xCk"/>
+                            <constraint firstAttribute="trailing" secondItem="fpl-eA-5Jy" secondAttribute="trailing" id="gkx-Y3-1L9"/>
+                            <constraint firstAttribute="bottom" secondItem="fpl-eA-5Jy" secondAttribute="bottom" id="wtz-DY-o1p"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SyX-My-djr">
+                        <rect key="frame" x="110" y="0.0" width="50" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="-" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dmM-Dy-K4e">
+                                <rect key="frame" x="21" y="11.5" width="8" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dmM-Dy-K4e" firstAttribute="centerX" secondItem="SyX-My-djr" secondAttribute="centerX" id="9eh-o1-FZh"/>
+                            <constraint firstAttribute="width" constant="50" id="PMd-kz-vsN"/>
+                            <constraint firstItem="dmM-Dy-K4e" firstAttribute="centerY" secondItem="SyX-My-djr" secondAttribute="centerY" id="iPb-Hk-lg4"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BuW-db-cbQ">
+                        <rect key="frame" x="160" y="0.0" width="110" height="43.5"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="17:30" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JTm-W7-Oxa" userLabel="lbTo" customClass="LWBlackNormalRegularLabel" customModule="AtworkCore" customModuleProvider="target">
+                                <rect key="frame" x="34" y="11.5" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="79O-WP-UFJ" userLabel="Bt Tap To">
+                                <rect key="frame" x="0.0" y="0.0" width="110" height="43.5"/>
+                                <connections>
+                                    <action selector="tapTo:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="zr9-32-Ovw"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="79O-WP-UFJ" firstAttribute="leading" secondItem="BuW-db-cbQ" secondAttribute="leading" id="1tU-O5-WV4"/>
+                            <constraint firstItem="JTm-W7-Oxa" firstAttribute="centerY" secondItem="BuW-db-cbQ" secondAttribute="centerY" id="39A-Y5-JM9"/>
+                            <constraint firstItem="JTm-W7-Oxa" firstAttribute="centerX" secondItem="BuW-db-cbQ" secondAttribute="centerX" id="FdA-5A-rUw"/>
+                            <constraint firstAttribute="trailing" secondItem="79O-WP-UFJ" secondAttribute="trailing" id="YSj-7U-bUF"/>
+                            <constraint firstAttribute="bottom" secondItem="79O-WP-UFJ" secondAttribute="bottom" id="aAV-PC-9Vr"/>
+                            <constraint firstItem="79O-WP-UFJ" firstAttribute="top" secondItem="BuW-db-cbQ" secondAttribute="top" id="uwO-VA-0LA"/>
+                        </constraints>
+                    </view>
+                    <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="49t-gy-cCw">
+                        <rect key="frame" x="300" y="0.0" width="10" height="43.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="10" id="WBf-BG-OEL"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="BuW-db-cbQ" firstAttribute="height" secondItem="CL8-Hw-GXm" secondAttribute="height" id="03J-Xt-J3n"/>
+                    <constraint firstItem="49t-gy-cCw" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="BuW-db-cbQ" secondAttribute="trailing" constant="15" id="1Rb-rP-kEj"/>
+                    <constraint firstAttribute="trailing" secondItem="49t-gy-cCw" secondAttribute="trailing" constant="10" id="99e-El-O0m"/>
+                    <constraint firstItem="CL8-Hw-GXm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="E2J-HT-MuD"/>
+                    <constraint firstAttribute="bottom" secondItem="CL8-Hw-GXm" secondAttribute="bottom" id="FoL-qO-71S"/>
+                    <constraint firstAttribute="bottom" secondItem="49t-gy-cCw" secondAttribute="bottom" id="GgS-po-Blj"/>
+                    <constraint firstItem="CL8-Hw-GXm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="HED-ui-Ckh"/>
+                    <constraint firstItem="49t-gy-cCw" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="LOF-Yy-n0c"/>
+                    <constraint firstAttribute="bottom" secondItem="BuW-db-cbQ" secondAttribute="bottom" id="MiR-VY-zof"/>
+                    <constraint firstItem="BuW-db-cbQ" firstAttribute="leading" secondItem="SyX-My-djr" secondAttribute="trailing" id="SM6-HD-l4y"/>
+                    <constraint firstItem="SyX-My-djr" firstAttribute="leading" secondItem="CL8-Hw-GXm" secondAttribute="trailing" id="XYA-7C-bpa"/>
+                    <constraint firstAttribute="bottom" secondItem="SyX-My-djr" secondAttribute="bottom" id="Xzp-C7-ppP"/>
+                    <constraint firstItem="BuW-db-cbQ" firstAttribute="width" secondItem="CL8-Hw-GXm" secondAttribute="width" id="h5s-jD-Eag"/>
+                    <constraint firstItem="SyX-My-djr" firstAttribute="height" secondItem="CL8-Hw-GXm" secondAttribute="height" id="hLU-fW-QWn"/>
+                    <constraint firstItem="BuW-db-cbQ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="nRv-SS-lXb"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btTapFrom" destination="fpl-eA-5Jy" id="Krt-eP-hd0"/>
+                <outlet property="btTapTo" destination="79O-WP-UFJ" id="TIJ-UF-oq7"/>
+                <outlet property="labelFrom" destination="IBg-MX-712" id="c6I-iB-boj"/>
+                <outlet property="labelTo" destination="JTm-W7-Oxa" id="Twu-KN-UDq"/>
+            </connections>
+            <point key="canvasLocation" x="137.59999999999999" y="132.23388305847078"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_arrow_right" width="15" height="16"/>
+    </resources>
+</document>

@@ -1,0 +1,160 @@
+/* 
+  Localizable.strings
+  LiftWork
+
+  Created by TrungND on 5/14/18.
+  Copyright © 2018 Trente. All rights reserved.
+*/
+//---------------------------------------------------------------------------------------------
+// Tabbar
+//---------------------------------------------------------------------------------------------
+"TAB_PERFORMANCE_INPUT"="Input";
+"TAB_PERFORMANCE_CONFIRM"="Confirm";
+"TAB_SETTING"="Setting";
+
+//---------------------------------------------------------------------------------------------
+// Login
+//---------------------------------------------------------------------------------------------
+"LW_COMPANYID"="CompanyID";
+"LW_USERID"="UserID";
+"LW_PASSWORD"="Password";
+"LW_ACTION_LOGIN"="Login";
+
+//---------------------------------------------------------------------------------------------
+// Construction
+//---------------------------------------------------------------------------------------------
+"LW_ACTION_SELECT"="Select";
+
+
+//---------------------------------------------------------------------------------------------
+// Others
+"lw_button_back"="<Back";
+
+
+//---------------------------------------------------------------------------------------------
+"lw_tabbar_performance_input"="Performance\n input";
+
+"lw_button_signin_title"="Login";
+"lw_button_select_title"="Select";
+
+"lw_character_a_row"="a row";
+"lw_character_ka_row"="ka row";
+"lw_character_sa_row"="sa row";
+"lw_character_ta_row"="ta row";
+"lw_character_na_row"="na row";
+"lw_character_ha_row"="ha row";
+"lw_character_ma_row"="ma row";
+"lw_character_ya_row"="ya row";
+"lw_character_ra_row"="ra row";
+"lw_character_wa_row"="wa row";
+
+
+"lw_character_basic_information"="Basic information";
+"lw_character_construction_select_list"="Construction select list";
+"lw_character_customer_select_list"="Customer select list";
+
+//Lift Material
+"lw_character_lift_material_select"="Lifting material select";
+"lw_character_unit_quantity"="Unit quantity";
+"lw_character_list"="List";
+
+//performance input
+
+"lw_character_lifting_material"="Lifting material";
+"lw_character_unit"= "Unit";
+"lw_character_people_rubbish"="People/Rubbish";
+"lw_character_people"="People";
+"lw_character_rubbish"="Rubish";
+"lw_character_from"="From";
+"lw_character_to"="To";
+"lw_character_time"="Time";
+"lw_character_back"="Back";
+"lw_character_next"="Next";
+"lw_confirm"="Confirm";
+"lw_send"="Send";
+"lw_character_elv"="ELV";
+"lw_character_operator"="Operator";
+"lw_character_customer"="Customer";
+"lw_performance_input"="Performance input";
+"lw_modify"="Modify";
+"lw_performance_modify"="Performance modify";
+"lw_performance_detail"="Performance detail";
+"lw_back_to_detail"="Back to detail";
+"lw_back_to_modify"="Back to modify";
+"lw_back_to_input"="Back to input";
+"lw_back_to_input"="Back to list";
+
+"lw_send_modification" = "Send modification";
+
+"tr_common_action_done"="Done";
+"tr_common_action_cancel"="Cancel";
+"lw_must_chose_customer"="You must chose customer";
+//performance confirm
+
+"lw_performance_confirm"="Performance confirm";
+"lw_date"="Date";
+"lw_construction"="Construction";
+"lw_elv"="ELV";
+"lw_operator"="Operator";
+"lw_performance_list"="Performance list";
+"lw_time"="Time";
+"lw_customer"="Customer";
+"lw_lifting_material"="Lifting material";
+"lw_from_to"="From → To";
+"lw_all"="All";
+
+//chose construction
+"lw_construction_name" = "Construction name";
+
+"lw_about_app"="About app";
+
+// setting
+"lw_setting"="Setting";
+"lw_character_account_information"="Account information";
+"lw_character_about_app"="About app";
+"lw_character_contact_us"="Contact us";
+"lw_character_term_of_service"="Term of service";
+"lw_character_privacy_policy"="Privacy policy";
+"lw_character_logout"="Logout";
+"lw_logout_confirm"="Are you sure to logout?";
+
+//contact us
+"lw_company_name"="Company name";
+"lw_name"="Name";
+"lw_email"="E-mail";
+"lw_contact_us_content"="Contact us content";
+"lw_send_contact_us_success"="Send successful!";
+
+//account information
+"lw_user_name"="User name";
+"lw_information"="Information";
+//Copyright
+"COPYRIGHT"="Copyright © 2018 @Work Inc. All Rights Reserved.";
+
+//No internet
+"tr_no_internet_connection"="No internet connection.";
+
+//version
+"VERSION"="Version %@";
+"UPDATE_VERSION_MESSAGE"="Version %@ is available on App Store.";
+"UPDATE_VERSION_MESSAGE_REQUIRED"="Version %@ is available on App Store.\n Upgrade to the lateast version is required.";
+
+//Others
+"ACTION_CANCEL"="Cancel";
+"ACTION_DONE"="Done";
+"ACTION_SIGNOUT"="Signout";
+"ACTION_OK"="OK";
+"ACTION_LATER"="Later";
+"ACTION_APP_STORE"="App Store";
+
+//ERROR
+"SERVER_STOPPED"="Server is stopped.";
+"ERROR_UNKNOWN"="Unknow error";
+"ERROR"="Error";
+"SSL_CERTIFICATE_INVALID"="現在お使いの端末で設定されている日時はサポートされていません。端末のシステム日付を現在日へ変更してください。";
+
+//Role
+"ADMIN"=" Admin";
+"MEMBER"="Member";
+"ACTION_DELETE"="Delete";
+"STAIR_FROM_HAVE_TO_DIFFER_FROM_TO"="You can not set same from-stair with to-stair";

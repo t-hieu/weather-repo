@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TransportVehicleController" customModule="AtworkCore" customModuleProvider="target">
+            <connections>
+                <outlet property="tableView" destination="TY1-XG-u5T" id="aMd-jF-Ufk"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pIW-Ti-ao4" customClass="ATDarkBorderView" customModule="AtworkCore" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="925-Sa-z6o" customClass="LWBlackNormalRegularLabel" customModule="AtworkCore" customModuleProvider="target">
+                            <rect key="frame" x="10" y="-5.5" width="365" height="61"/>
+                            <string key="text">台数は１台以上の入力が必要になります。
+該当車両重量がない場合は最も近い重量を選択してください。</string>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="925-Sa-z6o" firstAttribute="leading" secondItem="pIW-Ti-ao4" secondAttribute="leading" constant="10" id="78a-rK-RM5"/>
+                        <constraint firstAttribute="height" constant="50" id="H6F-aJ-zcY"/>
+                        <constraint firstAttribute="trailing" secondItem="925-Sa-z6o" secondAttribute="trailing" id="Ih6-gd-MKz"/>
+                        <constraint firstItem="925-Sa-z6o" firstAttribute="centerY" secondItem="pIW-Ti-ao4" secondAttribute="centerY" id="eWM-RN-ymT"/>
+                    </constraints>
+                    <viewLayoutGuide key="safeArea" id="6yw-0p-3te"/>
+                </view>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="TY1-XG-u5T">
+                    <rect key="frame" x="0.0" y="120" width="375" height="457"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GF0-56-y6Q">
+                    <rect key="frame" x="0.0" y="577" width="375" height="90"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bSm-xP-nA3" customClass="LWRoundedDarkOrangeButton" customModule="AtworkCore" customModuleProvider="target">
+                            <rect key="frame" x="255" y="0.0" width="80" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="SkI-WF-HyS"/>
+                                <constraint firstAttribute="width" constant="80" id="bfb-KL-ye0"/>
+                            </constraints>
+                            <state key="normal" title="決定"/>
+                            <connections>
+                                <action selector="tapDone:" destination="-1" eventType="touchUpInside" id="2h8-MK-hGT"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="90" id="1zm-Xd-6N5"/>
+                        <constraint firstAttribute="trailing" secondItem="bSm-xP-nA3" secondAttribute="trailing" constant="40" id="Gnf-CZ-fyx"/>
+                        <constraint firstAttribute="bottom" secondItem="bSm-xP-nA3" secondAttribute="bottom" constant="50" id="JJ7-RY-5dH"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dun-E2-3or" customClass="ATDarkBorderView" customModule="AtworkCore" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="85" width="375" height="35"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ma5-lD-2Ij">
+                            <rect key="frame" x="294.5" y="0.0" width="0.5" height="35"/>
+                            <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="0.5" id="frd-tE-eMR"/>
+                            </constraints>
+                        </view>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="車両重量" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ibl-vD-a3c" customClass="LWBlackNormalRegularLabel" customModule="AtworkCore" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="7" width="294.5" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="台数" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K7a-Ay-63G" customClass="LWBlackNormalRegularLabel" customModule="AtworkCore" customModuleProvider="target">
+                            <rect key="frame" x="295" y="7" width="80" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="K7a-Ay-63G" secondAttribute="trailing" id="8C9-Ov-xhM"/>
+                        <constraint firstItem="Ibl-vD-a3c" firstAttribute="centerY" secondItem="Dun-E2-3or" secondAttribute="centerY" id="OeF-mh-QPR"/>
+                        <constraint firstItem="Ibl-vD-a3c" firstAttribute="leading" secondItem="Dun-E2-3or" secondAttribute="leading" id="SOx-Qh-JCF"/>
+                        <constraint firstAttribute="trailing" secondItem="Ma5-lD-2Ij" secondAttribute="trailing" constant="80" id="YTu-Uh-1lb"/>
+                        <constraint firstAttribute="bottom" secondItem="Ma5-lD-2Ij" secondAttribute="bottom" id="bZE-9W-hpt"/>
+                        <constraint firstAttribute="height" constant="35" id="gnx-de-Qlo"/>
+                        <constraint firstItem="Ma5-lD-2Ij" firstAttribute="centerY" secondItem="K7a-Ay-63G" secondAttribute="centerY" id="mHj-bm-pm9"/>
+                        <constraint firstItem="K7a-Ay-63G" firstAttribute="centerY" secondItem="Dun-E2-3or" secondAttribute="centerY" id="ox1-ua-Khe"/>
+                        <constraint firstItem="Ma5-lD-2Ij" firstAttribute="leading" secondItem="Ibl-vD-a3c" secondAttribute="trailing" id="pD1-tH-gla"/>
+                        <constraint firstItem="K7a-Ay-63G" firstAttribute="leading" secondItem="Ma5-lD-2Ij" secondAttribute="trailing" id="voN-rw-27T"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oie-aI-v9R" userLabel="title" customClass="ATDarkBorderView" customModule="AtworkCore" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="50" width="375" height="35"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="輸送車両選択一覧" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="50z-gD-bC9" customClass="LWBlackNormalRegularLabel" customModule="AtworkCore" customModuleProvider="target">
+                            <rect key="frame" x="10" y="0.0" width="365" height="35"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="50z-gD-bC9" secondAttribute="bottom" id="ONc-HZ-GpK"/>
+                        <constraint firstAttribute="trailing" secondItem="50z-gD-bC9" secondAttribute="trailing" id="VBj-ja-924"/>
+                        <constraint firstAttribute="height" constant="35" id="a5o-Ws-k9a"/>
+                        <constraint firstItem="50z-gD-bC9" firstAttribute="top" secondItem="Oie-aI-v9R" secondAttribute="top" id="fJa-xr-IMg"/>
+                        <constraint firstItem="50z-gD-bC9" firstAttribute="leading" secondItem="Oie-aI-v9R" secondAttribute="leading" constant="10" id="h9Z-La-vqp"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Dun-E2-3or" firstAttribute="top" secondItem="Oie-aI-v9R" secondAttribute="bottom" id="788-t3-ykg"/>
+                <constraint firstItem="GF0-56-y6Q" firstAttribute="width" secondItem="i5M-Pr-FkT" secondAttribute="width" id="7CL-gx-4m0"/>
+                <constraint firstItem="GF0-56-y6Q" firstAttribute="top" secondItem="TY1-XG-u5T" secondAttribute="bottom" id="7bn-mz-SMr"/>
+                <constraint firstItem="pIW-Ti-ao4" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="826-DT-Dq7"/>
+                <constraint firstItem="pIW-Ti-ao4" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="8p1-xh-YNK"/>
+                <constraint firstItem="Oie-aI-v9R" firstAttribute="top" secondItem="pIW-Ti-ao4" secondAttribute="bottom" id="AI2-UL-fyD"/>
+                <constraint firstItem="TY1-XG-u5T" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Dzd-6h-ugs"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Dun-E2-3or" secondAttribute="trailing" id="Gri-46-slU"/>
+                <constraint firstItem="Dun-E2-3or" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Rnp-0J-4MC"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="TY1-XG-u5T" secondAttribute="trailing" id="Z4u-D8-X2m"/>
+                <constraint firstItem="pIW-Ti-ao4" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bQ3-kz-nTo"/>
+                <constraint firstItem="Oie-aI-v9R" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="ddM-tT-Qks"/>
+                <constraint firstItem="Oie-aI-v9R" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="oFY-p1-WLn"/>
+                <constraint firstItem="TY1-XG-u5T" firstAttribute="top" secondItem="Dun-E2-3or" secondAttribute="bottom" id="pAg-GU-T0N"/>
+                <constraint firstItem="GF0-56-y6Q" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="wAc-KF-HbI"/>
+                <constraint firstItem="GF0-56-y6Q" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="y87-Zf-gdQ"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="138.40000000000001" y="131.78410794602701"/>
+        </view>
+    </objects>
+</document>

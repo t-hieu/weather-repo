@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ATVersionViewController" customModule="AtworkCore" customModuleProvider="target">
+            <connections>
+                <outlet property="appImage" destination="rDJ-e0-uuH" id="SuV-Az-SSx"/>
+                <outlet property="containerView" destination="4eh-ed-ch5" id="w0g-Ka-jqe"/>
+                <outlet property="versionLabel" destination="QGM-uy-r3b" id="SjS-QE-2UR"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="webView" destination="9p3-wh-Z2P" id="MhA-ha-a3f"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rDJ-e0-uuH">
+                    <rect key="frame" x="112.5" y="50" width="150" height="150"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="rDJ-e0-uuH" secondAttribute="height" multiplier="1:1" id="CBu-Zh-wnq"/>
+                        <constraint firstAttribute="width" constant="150" id="yhC-DS-DTC"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QGM-uy-r3b" customClass="LWBlackNormalRegularLabel" customModule="AtworkCore" customModuleProvider="target">
+                    <rect key="frame" x="166.5" y="210" width="42" height="25"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="25" id="JTZ-cc-PLh"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4eh-ed-ch5">
+                    <rect key="frame" x="10" y="250" width="355" height="407"/>
+                    <subviews>
+                        <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9p3-wh-Z2P">
+                            <rect key="frame" x="0.0" y="0.0" width="355" height="407"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </webView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="9p3-wh-Z2P" secondAttribute="bottom" id="UnM-Nk-9iO"/>
+                        <constraint firstItem="9p3-wh-Z2P" firstAttribute="top" secondItem="4eh-ed-ch5" secondAttribute="top" id="j2a-5d-ZcX"/>
+                        <constraint firstItem="9p3-wh-Z2P" firstAttribute="leading" secondItem="4eh-ed-ch5" secondAttribute="leading" id="tjL-ym-RUk"/>
+                        <constraint firstAttribute="trailing" secondItem="9p3-wh-Z2P" secondAttribute="trailing" id="w6i-Hi-DfD"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rDJ-e0-uuH" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="8cX-8N-D3g"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="4eh-ed-ch5" secondAttribute="trailing" constant="10" id="GUs-H5-OIE"/>
+                <constraint firstItem="QGM-uy-r3b" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="RzB-p2-Apl"/>
+                <constraint firstItem="4eh-ed-ch5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="10" id="VRK-MB-pIf"/>
+                <constraint firstItem="rDJ-e0-uuH" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="dIO-qo-y5s"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="4eh-ed-ch5" secondAttribute="bottom" constant="10" id="nlD-ii-Kdi"/>
+                <constraint firstItem="4eh-ed-ch5" firstAttribute="top" secondItem="QGM-uy-r3b" secondAttribute="bottom" constant="15" id="tMb-Kg-x29"/>
+                <constraint firstItem="QGM-uy-r3b" firstAttribute="top" secondItem="rDJ-e0-uuH" secondAttribute="bottom" constant="10" id="zx5-gn-Kik"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+        </view>
+    </objects>
+</document>

@@ -1,0 +1,175 @@
+/*
+ Localizable.strings
+ LiftWork
+ 
+ Created by TrungND on 5/14/18.
+ Copyright © 2018 Trente. All rights reserved.
+ */
+//---------------------------------------------------------------------------------------------
+// Tabbar
+//---------------------------------------------------------------------------------------------
+"TAB_PERFORMANCE_INPUT"="実績\n入力";
+"TAB_PERFORMANCE_CONFIRM"="実績\n確認";
+"TAB_SETTING"="設定";
+
+//---------------------------------------------------------------------------------------------
+// Login
+//---------------------------------------------------------------------------------------------
+"LW_COMPANYID"="会社ID";
+"LW_USERID"="ユーザーID";
+"LW_PASSWORD"="パスワード";
+"LW_ACTION_LOGIN"="ログイン";
+
+//---------------------------------------------------------------------------------------------
+// Construction
+//---------------------------------------------------------------------------------------------
+"LW_ACTION_SELECT"="選択";
+
+
+//---------------------------------------------------------------------------------------------
+// Others
+"lw_button_back"="<戻る";
+
+
+//---------------------------------------------------------------------------------------------
+"lw_tabbar_performance_input"="実績入力";
+
+"lw_button_signin_title"="ログイン";
+"lw_button_select_title"="選択";
+
+"lw_character_a_row"="あ行";
+"lw_character_ka_row"="か行";
+"lw_character_sa_row"="さ行";
+"lw_character_ta_row"="た行";
+"lw_character_na_row"="な行";
+"lw_character_ha_row"="は行";
+"lw_character_ma_row"="ま行";
+"lw_character_ya_row"="や行";
+"lw_character_ra_row"="ら行";
+"lw_character_wa_row"="わ行";
+
+
+"lw_character_basic_information"="基本情報";
+"lw_character_construction_select_list"="現場選択一覧";
+"lw_character_customer_select_list"="業者選択一覧";
+
+//Lift Material
+"lw_character_lift_material_select"="揚重品目選択";
+"lw_character_unit_quantity"="ユニット数";
+"lw_character_list"="揚重品目選択一覧";
+
+//performance input
+
+"lw_character_lifting_material"="揚重品目";
+"lw_character_unit"= "ユニット";
+"lw_character_people_rubbish"="人/ゴミ";
+"lw_character_people"="人";
+"lw_character_rubbish"="ゴミ";
+"lw_character_from"="揚重元";
+"lw_character_to"="行先";
+"lw_character_time"="回数";
+"lw_character_back"="前";
+"lw_character_next"="次";
+"lw_confirm"="確定";
+"lw_send"="送信";
+"lw_character_elv"="ELV";
+"lw_character_operator"="担当者";
+"lw_character_customer"="業者";
+"lw_performance_input"="実績入力";
+"lw_modify"="修正";
+"lw_performance_modify"="実績修正";
+"lw_performance_detail"="実績詳細";
+"lw_back_to_detail"="詳細に戻る";
+"lw_back_to_modify"="修正に戻る";
+"lw_back_to_input"="入力に戻る";
+"lw_back_to_list"="一覧に戻る";
+
+"lw_send_modification" = "修正送信";
+
+"tr_common_action_done"="完了";
+"tr_common_action_cancel"="キャンセル";
+"lw_must_chose_customer"="業者を選択して下さい。";
+
+"lw_title_dialog_confirm_back"="修正箇所が保存されていませんがよろしいですか?";
+"lw_title_dialog_confirm_back_yes"="修正を保存して実績詳細に戻る";
+"lw_title_dialog_confirm_back_no"="修正を保存せず戻る";
+
+"lw_free_title"="無料";
+"lw_non_free_title"="有料";
+
+//performance confirm
+
+"lw_performance_confirm"="実績確認";
+"lw_date"="実績日付";
+"lw_construction"="現場名";
+"lw_elv"="ELV";
+"lw_operator"="担当者";
+"lw_performance_list"="実績一覧";
+"lw_time"="時間";
+"lw_customer"="業者";
+"lw_lifting_material"="揚重品目";
+"lw_from_to"="揚重元→行先";
+"lw_all"="全て";
+
+//chose construction
+"lw_construction_name" = "現場名";
+
+"lw_about_app"="アプリについて";
+
+"lw_clear_customer" = "選択クリア";
+// setting
+"lw_setting"="設定";
+"lw_character_account_information"="アカウント情報";
+"lw_character_about_app"="アプリについて";
+"lw_character_contact_us"="お問い合わせ";
+"lw_character_term_of_service"="利用規約";
+"lw_character_privacy_policy"="プライバシーポリシー";
+"lw_character_logout"="ログアウト";
+"lw_logout_confirm"="ログアウトしますか?";
+
+//contact us
+"lw_company_name"="社名";
+"lw_name"="名前";
+"lw_email"="E-mail";
+"lw_contact_us_content"="お問い合わせ内容";
+"lw_send_contact_us_success"="メッセージの送付が完了しました。";
+
+//account information
+"lw_user_name"="ユーザー名";
+"lw_information"="権限";
+
+//Copyright
+"COPYRIGHT"="Copyright © 2018 @Work Inc. All Rights Reserved.";
+
+//No internet
+"tr_no_internet_connection"="ネットワークの経路で一時的な障害が発生しているようです。ネットワークの管理者にお問い合わせください。";
+
+//version
+"VERSION"="バージョン %@";
+"UPDATE_VERSION_MESSAGE"="最新のアプリをApp Storeからダウンロードいただけます";
+"UPDATE_VERSION_MESSAGE_REQUIRED"="最新版へのアップグレードが必要です。App Storeで最新版をダウンロードしてください。";
+
+//Others
+"ACTION_CANCEL"="キャンセル";
+"ACTION_DONE"="完了";
+"ACTION_SIGNOUT"="ログアウト";
+"ACTION_OK"="OK";
+"ACTION_LATER"="後で";
+"ACTION_APP_STORE"="App Store";
+
+//ERROR
+"SERVER_STOPPED"="現在サーバが停止しています。しばらくしてから再度アクセスしてください。";
+"ERROR_UNKNOWN"="アプリ側で解決ができないエラーが発生しました。条件を変えても再発する場合、サービス提供者にお問い合わせください。";
+"ERROR"="エラー";
+"SSL_CERTIFICATE_INVALID"="現在お使いの端末で設定されている日時はサポートされていません。端末のシステム日付を現在日へ変更してください。";
+
+"SELECTED_ALERT"="選択可能回数は１〜３です。";
+
+//Role
+"ADMIN"=" 管理者権限";
+"MEMBER"="メンバー権限";
+"ACTION_DELETE"="削除";
+"STAIR_FROM_HAVE_TO_DIFFER_FROM_TO"="揚重元と行先は同じものを設定できません。";
+
+
+

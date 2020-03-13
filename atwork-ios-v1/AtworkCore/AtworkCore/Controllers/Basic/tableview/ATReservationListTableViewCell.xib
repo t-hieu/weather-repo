@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ATReservationListTableViewCell" id="KGk-i7-Jjw" customClass="ATReservationListTableViewCell" customModule="AtworkCore" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="48"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="47.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Month date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbF-Y1-vmc" userLabel="Monthdate">
+                        <rect key="frame" x="5" y="2" width="150" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="Plc-xC-gsp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="t3M-BZ-Ifj" userLabel="Time">
+                        <rect key="frame" x="5" y="23" width="150" height="24"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="RQF-r8-0JX"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" text="Construction " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rof-zf-4jG" userLabel="Construction ">
+                        <rect key="frame" x="155" y="2" width="188" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Request status " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CZK-EJ-Rxb" userLabel="Request status ">
+                        <rect key="frame" x="155" y="23" width="188" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" alpha="0.34999999999999998" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_arrow_right" translatesAutoresizingMaskIntoConstraints="NO" id="B6y-aK-F2k">
+                        <rect key="frame" x="343" y="11.5" width="22" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="oeG-4o-Wdv"/>
+                        </constraints>
+                    </imageView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="CZK-EJ-Rxb" firstAttribute="top" secondItem="rof-zf-4jG" secondAttribute="bottom" id="2Q4-XC-An1"/>
+                    <constraint firstItem="CZK-EJ-Rxb" firstAttribute="leading" secondItem="t3M-BZ-Ifj" secondAttribute="trailing" id="2kv-Nr-lta"/>
+                    <constraint firstAttribute="bottom" secondItem="CZK-EJ-Rxb" secondAttribute="bottom" constant="0.5" id="AHQ-ZS-YCq"/>
+                    <constraint firstItem="B6y-aK-F2k" firstAttribute="leading" secondItem="rof-zf-4jG" secondAttribute="trailing" id="Mkn-3L-mq7"/>
+                    <constraint firstAttribute="trailing" secondItem="B6y-aK-F2k" secondAttribute="trailing" constant="10" id="P6V-K0-Iak"/>
+                    <constraint firstItem="rof-zf-4jG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="PJx-RZ-o0k"/>
+                    <constraint firstAttribute="trailing" secondItem="CZK-EJ-Rxb" secondAttribute="trailing" constant="32" id="ZLk-VN-IMa"/>
+                    <constraint firstItem="rbF-Y1-vmc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="aFT-4M-dAU"/>
+                    <constraint firstItem="rbF-Y1-vmc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="2" id="buT-gO-E4t"/>
+                    <constraint firstItem="B6y-aK-F2k" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="dnS-31-R4N"/>
+                    <constraint firstItem="t3M-BZ-Ifj" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="5" id="kyz-A7-YZY"/>
+                    <constraint firstItem="rof-zf-4jG" firstAttribute="leading" secondItem="rbF-Y1-vmc" secondAttribute="trailing" id="mfz-3k-2UI"/>
+                    <constraint firstAttribute="bottom" secondItem="t3M-BZ-Ifj" secondAttribute="bottom" constant="0.5" id="onz-Bg-nMg"/>
+                    <constraint firstItem="t3M-BZ-Ifj" firstAttribute="top" secondItem="rbF-Y1-vmc" secondAttribute="bottom" id="piW-t4-LPW"/>
+                    <constraint firstAttribute="trailing" secondItem="rof-zf-4jG" secondAttribute="trailing" constant="32" id="uQ5-yT-SeK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lbContruction" destination="rof-zf-4jG" id="6hm-AJ-du0"/>
+                <outlet property="lbRequestStatus" destination="CZK-EJ-Rxb" id="uR1-dK-NUA"/>
+                <outlet property="lbmonthDate" destination="rbF-Y1-vmc" id="DTb-eg-QJR"/>
+                <outlet property="lbtime" destination="t3M-BZ-Ifj" id="0jY-0q-96o"/>
+            </connections>
+            <point key="canvasLocation" x="136" y="127.736131934033"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_arrow_right" width="15" height="16"/>
+    </resources>
+</document>
